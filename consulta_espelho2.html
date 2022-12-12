@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Sidebar 01</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style2.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="p-4 pt-5">
+		  		<a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.jpg);"></a> 
+		  		<font color="#ced876">Online </font><img src="images/online.png" width="10" height="10"> <br>
+		  		Seja bem-vindo(a), </font><br>
+		  		Fernanda Souza.</font> <br> <br> 
+
+	        <ul class="list-unstyled components mb-5">
+
+	          <li class="active">
+
+
+              <li>
+                <a href="index.html">Início</a>
+            
+              <li>
+
+              
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Registro de Ponto</a>
+             
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+
+                <li>
+                    <a href="registrar_entrada.html">Registrar Entrada</a>
+                </li>
+
+                <li>
+                    <a href="consultar_espelho.html">Consultar</a> 
+                </li>
+               
+              </ul>
+
+
+	            <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Registros do Setor</a>
+	           
+              <ul class="collapse list-unstyled" id="homeSubmenu2">
+
+                <li>
+                    <a href="selecao_unidade_mes.html">Consultar</a>	
+                </li>
+
+                <li>
+                    <a href="construcao.html">Homologar</a>  
+                </li>
+
+               
+	            </ul>
+
+
+               <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Relatórios</a>
+             
+              <ul class="collapse list-unstyled" id="homeSubmenu3">
+
+                <li>
+                    <a href="selecao_unidade_mes2.html">Servidores com Débito no Mês</a>  
+                </li>               
+
+              </ul>             
+
+	         <li>
+                <a href="index.html">Sair</a>
+            
+            <li>
+
+	        </ul>
+
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos direitos reservados. Sistema Pontus.
+              <!--| This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a> --
+						   Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        </div>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Sair</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </nav>
+
+         <h2 class="mb-4">Consultar Registros Diários de Ponto</h2>
+        <p >Utilize esta funcionalidade para realizar a consulta dos registros diários do ponto eletrônico para o mês e ano selecionados.</p>
+        <P> Selecione abaixo o mês e ano desejados para consulta: </P>
+        <br>
+        
+         <form>      
+          	  
+	  <div class="form-group row">
+	    <label for="staticEmail" class="col-sm-1 col-form-label"><b>Mês:</b></label>
+	    <div class="col-sm-2">
+	      <input class="form-control" list="browsers" name="browser" id="browser">
+		<datalist id="browsers">
+		  <option value="Janeiro">
+		  <option value="Fevereiro">
+		  <option value="Março">
+		  <option value="Abril">
+		  <option value="Maio">
+		  <option value="Junho">
+		  <option value="Julho">
+		  <option value="Agosto">
+		  <option value="Setembro">
+		  <option value="Outubro">
+		  <option value="Novembro">
+		  <option value="Dezembro">
+		</datalist>
+	    </div>
+	  </div>
+	  
+	  <div class="form-group row">
+	    <label for="inputPassword" class="col-sm-1 col-form-label"><b>Ano:</b></label>
+	    <div class="col-sm-2">
+	       <input class="form-control" list="browsers2" name="browser2" id="browser2">
+		<datalist id="browsers2">
+		  <option value="2022">
+		  <option value="2021">
+		  <option value="2020">		  
+		</datalist>
+	    </div>	   
+	  </div>	  	  
+	</form>
+	
+	<div class="form-group row">
+	    <label for="inputPassword" class="col-sm-1 col-form-label"></label>
+	    <div class="col-sm-10">
+	      <a href="consulta_espelho2.html"><button type="submit" class="btn btn-primary" onclick="myFunction()">Consultar</button></a>
+	       <br><br> 
+	 </div>     	
+	 
+	 <div>	
+	 <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Data:</th>  
+              <th scope="col">Horário de Entrada:</th>              
+              <th scope="col">Horário de Saída:</th>
+              <th scope="col">Horas Excedentes:</th>
+              <th scope="col">Saldo no Mês:</th>  
+              <th scope="col">Observações:</th>                    
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>01/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                             
+            </tr>
+		
+	    <tr>			
+	    <th scope="row">2</th>	     
+              <td>02/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                     	
+            </tr> 
+            
+            <tr>
+              <th scope="row">3</th>
+              <td>03/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                             
+            </tr>
+		
+	    <tr>			
+	    <th scope="row">4</th>	     
+              <td>04/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                     	
+            </tr> 
+            
+            <tr>
+              <th scope="row">5</th>
+              <td>05/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                             
+            </tr>
+		
+	    <tr>			
+	    <th scope="row">6</th>	     
+              <td>06/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                     	
+            </tr> 
+            
+            <tr>
+              <th scope="row">7</th>
+              <td>07/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                             
+            </tr>
+		
+	    <tr>			
+	    <th scope="row">8</th>	     
+              <td>08/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                     	
+            </tr> 
+            
+            <tr>
+              <th scope="row">9</th>
+              <td>09/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                             
+            </tr>
+		
+	    <tr>			
+	    <th scope="row">10</th>	     
+              <td>10/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                     	
+            </tr> 
+            
+            <tr>
+              <th scope="row">11</th>
+              <td>11/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                             
+            </tr>
+		
+	    <tr>			
+	    <th scope="row">12</th>	     
+              <td>12/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                     	
+            </tr> 
+            
+            <tr>
+              <th scope="row">13</th>
+              <td>13/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                             
+            </tr>
+		
+	    <tr>			
+	    <th scope="row">14</th>	     
+              <td>14/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                     	
+            </tr> 
+            
+            <tr>
+              <th scope="row">15</th>
+              <td>15/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                             
+            </tr>
+		
+	    <tr>			
+	    <th scope="row">16</th>	     
+              <td>16/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                     	
+            </tr> 
+            
+            <tr>
+              <th scope="row">17</th>
+              <td>17/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                             
+            </tr>
+		
+	    <tr>			
+	    <th scope="row">18</th>	     
+              <td>18/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                     	
+            </tr> 
+            
+            <tr>
+              <th scope="row">19</th>
+              <td>19/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                             
+            </tr>
+		
+	    <tr>			
+	    <th scope="row">20</th>	     
+              <td>20/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                     	
+            </tr> 
+            
+            <tr>
+              <th scope="row">21</th>
+              <td>21/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                             
+            </tr>
+		
+	    <tr>			
+	    <th scope="row">22</th>	     
+              <td>22/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                     	
+            </tr> 
+            
+            <tr>
+              <th scope="row">23</th>
+              <td>23/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                             
+            </tr>
+		
+	    <tr>			
+	    <th scope="row">24</th>	     
+              <td>24/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                     	
+            </tr> 
+            
+            <tr>
+              <th scope="row">25</th>
+              <td>25/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                             
+            </tr>
+		
+	    <tr>			
+	    <th scope="row">26</th>	     
+              <td>26/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                     	
+            </tr> 
+            
+            <tr>
+              <th scope="row">27</th>
+              <td>27/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                             
+            </tr>
+		
+	    <tr>			
+	    <th scope="row">28</th>	     
+              <td>28/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                     	
+            </tr> 
+            
+            <tr>
+              <th scope="row">29</th>
+              <td>29/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                             
+            </tr>
+		
+	    <tr>			
+	    <th scope="row">30</th>	     
+              <td>30/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                     	
+            </tr> 
+             	      
+            <tr>			
+	    <th scope="row">31</th>	     
+              <td>31/03/2022</td>             
+              <td>08:02</td>
+              <td>16:35</td>
+              <td>(+) 04:58</td>
+              <td>(+) 04:58</td>                     	
+            </tr>
+              	           
+          </tbody>
+        </table>
+	
+	</div>
+			
+
+    <script src="js/jquery2.min.js"></script>
+    <script src="js/popper2.js"></script>
+    <script src="js/bootstrap2.min.js"></script>
+    <script src="js/main2.js"></script>
+  </body>
+</html>

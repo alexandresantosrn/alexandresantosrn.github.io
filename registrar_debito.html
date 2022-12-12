@@ -19,9 +19,7 @@
 		  		<font color="#ced876">Online </font><img src="images/online.png" width="10" height="10"> <br>
 		  		Seja bem-vindo(a), </font><br>
 		  		Fernanda Souza.</font> <br> <br> 
-
 	        <ul class="list-unstyled components mb-5">
-
 	          <li class="active">
 
 
@@ -30,17 +28,16 @@
             
               <li>
 
-              
-              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Registro de Ponto</a>
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Registro de Ponto</a>
              
               <ul class="collapse list-unstyled" id="homeSubmenu">
 
                 <li>
-                    <a href="registrar_entrada.html">Registrar Entrada</a>
+                    <a href="registar_entrada.html">Registrar Entrada</a>
                 </li>
 
                 <li>
-                    <a href="consultar_espelho.html">Consultar</a> 
+                    <a href="consultar_portaria.html">Consultar</a> 
                 </li>
                
               </ul>
@@ -71,17 +68,16 @@
                 </li>               
 
               </ul>             
-
-	         <li>
+           <li>
                 <a href="index.html">Sair</a>
             
             <li>
 
-	        </ul>
+          </ul>
 
 	        <div class="footer">
 	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos direitos reservados. Sistema Pontus.
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos direitos reservados. Dantas Software.
               <!--| This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a> --
 						   Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 	        </div>
@@ -114,18 +110,50 @@
               </ul>
             </div>
           </div>
-          
         </nav>
 
-        <h2 class="mb-4">Boas Vindas</h2>
-        <p >Seja bem-vindo(a) ao sistema <b>Pontus.</b></p>
-        <p>Utilize as opções laterais para acesso as funcionalidades do sistema.</p>
+        <h2 class="mb-4">Registrar Débito no Mês</h2>
+        <p>Utilize essa funcionalidade para registro de débito para o servidor selecionado.</p>     
+        
+        <br>       
 
-      
-      </div>
-		</div>
+       <form>
+	  <div class="form-group row">
+	    <label for="staticEmail" class="col-sm-2 col-form-label">Funcionário:</label>
+	    <div class="col-sm-10">
+	      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Alfredo de Mendonça Vieira (1234567)">
+	    </div>
+	  </div>
+	  <div class="form-group row">
+	    <label for="inputPassword" class="col-sm-2 col-form-label">Setor:</label>
+	    <div class="col-sm-10">
+	      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Setor de Compras">
+	    </div>
+	  </div>
+	  <div class="form-group row">
+	    <label for="inputPassword" class="col-sm-2 col-form-label">Mês/Ano:</label>
+	    <div class="col-sm-10">
+	      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Setembro/2022">
+	    </div>
+	  </div>
+	  <div class="form-group row">
+	    <label for="inputPassword" class="col-sm-2 col-form-label">Débito no mês:</label>
+	    <div class="col-sm-10">
+	      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="(-) 04:58">
+	     </div>  
+	    	
+	    </div>
+	</form>
+	
+	<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-8">
+    <button id="submit" name="submit" class="btn btn-primary" value="1">Registrar Débito</button>
+    <a href="index_main.html" id="cancel" name="cancel" class="btn btn-default">Cancelar</a>
+  </div>
+</div>
 
-
+	
 
     <script src="js/jquery2.min.js"></script>
     <script src="js/popper2.js"></script>

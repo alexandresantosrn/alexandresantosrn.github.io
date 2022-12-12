@@ -19,9 +19,7 @@
 		  		<font color="#ced876">Online </font><img src="images/online.png" width="10" height="10"> <br>
 		  		Seja bem-vindo(a), </font><br>
 		  		Fernanda Souza.</font> <br> <br> 
-
 	        <ul class="list-unstyled components mb-5">
-
 	          <li class="active">
 
 
@@ -30,8 +28,7 @@
             
               <li>
 
-              
-              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Registro de Ponto</a>
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Registro de Ponto</a>
              
               <ul class="collapse list-unstyled" id="homeSubmenu">
 
@@ -71,17 +68,16 @@
                 </li>               
 
               </ul>             
-
-	         <li>
+           <li>
                 <a href="index.html">Sair</a>
             
             <li>
 
-	        </ul>
+          </ul>
 
 	        <div class="footer">
 	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos direitos reservados. Sistema Pontus.
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos direitos reservados. Dantas Software.
               <!--| This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a> --
 						   Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 	        </div>
@@ -114,14 +110,77 @@
               </ul>
             </div>
           </div>
-          
         </nav>
 
-        <h2 class="mb-4">Boas Vindas</h2>
-        <p >Seja bem-vindo(a) ao sistema <b>Pontus.</b></p>
-        <p>Utilize as opções laterais para acesso as funcionalidades do sistema.</p>
+        <h2 class="mb-4">Consultar Registros de Ponto do Setor</h2>
+        <p>Utilize essas informações para consulta dos registro de ponto dos funcionários da sua unidade.</p>
+     
+        
+        <br>
+       
 
-      
+        <div class="form-group row">
+        	
+         <label for="inputServidor" class="col-sm-2 col-form-label"><b>Nome do Funcionário:</b></label>
+         <div class="col-sm-4">
+         
+          <input type="text" class="form-control" id="inputServidor" >
+          <br>
+           <button type="submit" class="btn btn-primary">Consultar Funcionário</button> 
+        </div>
+     
+       </div>
+
+           <br><br>  
+
+        <div>
+
+         <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nome do Funcionário</th>
+              <th scope="col">Mes/Ano</th>
+              <th scope="col">Horas Trabalhas no Mês</th>
+              <th scope="col">Crédito/Débito no Mês</th>
+              <th scope="col">Cargo</th>
+              <th scope="col">Gerar Arquivo (.pdf)</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Alfredo de Mendonça Vieira (1234567)</td>
+              <td>Julho/2022</td>
+              <td>115:35</td>
+              <td>(+) 00:35</td>
+              <td>Assistente em Administração</td>
+              <td><img src = "images/download.png" alt="Consultar Plano" heigth="30" width="30"></td>              
+            </tr>
+		
+	    <tr>			
+	    <th scope="row">2</th>
+	      <td>Marina Sampaio de Castro (1357989)</td>
+	      <td>Julho/2022</td>
+	      <td>113:25</td>
+	      <td>(-) 02:35</td>
+	      <td>Arquivista</td>
+	      <td><img src = "images/download.png" alt="Consultar Plano" heigth="30" width="30"></td>	
+            </tr> 
+             	           
+          </tbody>
+        </table>
+
+        </div>       
+
+
+
+               
+       </div>
+       
+
+       
       </div>
 		</div>
 
